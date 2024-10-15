@@ -92,6 +92,24 @@ function nouvelAjout() {
   const divAjout = document.createElement("div")
   divAjout.classList.add("divAjout")
 
+  const buttonBack = document.createElement("button")
+  buttonBack.innerText = "Retour"
+  buttonBack.id = "backBtn"
+  divAjout.appendChild(buttonBack)
+
+  buttonBack.addEventListener("click", () => {
+    clean()
+    afficherRevenu()
+    afficherAccueil()
+    afficherListe()
+    afficherGraph()
+  })
+
+  const info = document.createElement("h3")
+  info.innerText = "Ajoutez une nouvelle dépense"
+  info.id = "info"
+  divAjout.appendChild(info)
+
   const labelTitle = document.createElement("label")
   const inputTitle = document.createElement("input")
   labelTitle.innerText = "Titre"
@@ -146,6 +164,16 @@ function nouvelAjout() {
     const catSelectValue = selectCat.value
     const prixInputValue = inputPrix.value
     const dateInputValue = inputDate.value
+
+    if (!catSelectValue) {
+      alert("Veuillez sélectionner une catégorie.")
+      return
+    }
+
+    if (!prixInputValue || prixInputValue <= 0) {
+      alert("Veuillez entrer un montant valide.")
+      return
+    }
 
     totalDepense += parseInt(prixInputValue)
 

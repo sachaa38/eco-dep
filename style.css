@@ -14,7 +14,7 @@
 }
 
 body {
-  background-image: url("./images/billy-huynh-W8KTS-mhFUE-unsplash.jpg");
+  background-image: url("./images/jason-leung-wmyE5IBiOmo-unsplash.jpg");
   background-size: cover;
   background-attachment: fixed;
   width: 100%;
@@ -34,7 +34,7 @@ a:hover {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
-  text-shadow: 0 0 15px rgba(255, 255, 255, 0.556);
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.556);
 }
 
 #app {
@@ -48,7 +48,7 @@ h1 {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
   background-color: #0f149bb6;
   padding : 5px;
   border-radius: 25px;
@@ -84,6 +84,7 @@ h1 {
   color: rgb(255, 255, 255);
   transition: 1s ease;
   border-radius: 25px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
   
 }
 
@@ -106,7 +107,7 @@ h1 {
   background-color: #101467a7;
   border-radius: 10px;
   color: white;
-  box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
   transition: 250ms ease;
 }
 
